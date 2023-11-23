@@ -55,12 +55,47 @@ The directory structure of your new project looks like this (please adjust the s
 
 ### Readme file
 
-This file, `README.md`, should be used to include all information on the files included in the project and how to make them work.
+## Implementation
 
-It makes use of Markdown, which is a markup language focused on readability. You can find information on the main syntax of Markdown in:
+# 1. Import Requirements
+     import sys
+     import os
+     from os import system
+     import tensorflow as tf
+     from google.colab import drive (only if you are using Google Colab)
+     
+# 2. Change directory
 
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+If you use the Google Colab notebook, connect it to your drive using: 
+     drive.mount('/content/drive')
+     os.chdir('/content/drive/MyDrive/path') - change"path" to your desired path
 
-[Markdown Basics Guide](https://markdown-guide.readthedocs.io/en/latest/basics.html)
+If you are using other notebook such as Jupyter Notebook just change its director using OS.
 
-Multiple text editors, such as Visual Studio Code, Sublime Text, Atom, Notepad++ have extensions that you can install to transform the Markdown file (.md) into a .pdf or .html.
+# 3. Train the model
+
+To train the GANomaly model just use the following text where some of the hyerparameter have been changed:
+
+!python train.py                             \
+        --model ganomaly                     \
+        --metric auprc --dataroot data --niter 100 \
+        --lr 0.0004 --beta1 0.9 --isize 16 --proportion 0.5 \
+        --batchsize 128 --nz 250  --w_con 50  --w_enc 1  --w_adv 1
+        
+# 4. Metrics.py
+
+After the previous text (# 3) is ran, 4 folders are created in the output folder.
+For a complete analysis of run:
+
+!python metrics.py
+
+This will provide various graphs for the different epochs previously ran and a new folder containing its respective images is created.
+
+
+## Sampling.py (for SIXRAY only)
+
+This code serves to randomly generate 3 new folders (train/0.normal; test/0.normal; test/0.abnormal) containing the desired number of images on each. Just make sure to chang the directory on the script itself to your local sixray dataset.
+
+## RLHF Files
+
+The 2 present scripts display some of the developments for Reiforcement Learning w/ Human Feedback to be implemented in the future.
