@@ -19,17 +19,17 @@ The directory structure of your new project looks like this (please adjust the s
 │       └── 1.abnormal
 │
 ├── lib                <- Ganomaly files
-│   ├── visualizer.py        <- 
-│   ├── data.py              <- 
-│   ├── __init__.py          <-
-│   ├── networks.py          <-
-│   ├── evaluate.py          <-
-│   ├── loss.py              <-
-│   └── model.py             <- Project/Thesis source files
+│   ├── visualizer.py         
+│   ├── data.py              
+│   ├── __init__.py          
+│   ├── networks.py          <- added Early Stopping
+│   ├── evaluate.py          
+│   ├── loss.py              
+│   └── model.py              
 │
-├── options.py         <-
-├── train.py           <-
-├── metrics.py         <-
+├── options.py         <- Original Ganomaly Script with hyperparameter tunning
+├── train.py           
+├── metrics.py         <- Script to generate csv file and plots of metrics results
 │ 
 ├── references         <- Articles, books and other references used in your project. It is good practice to  
 |                         reference these materials in the comments of your code.
