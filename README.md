@@ -67,8 +67,9 @@ The directory structure of your new project looks like this (please adjust the s
 # 2. Change directory
 
 If you use the Google Colab notebook, connect it to your drive using: 
+
      drive.mount('/content/drive') \
-     os.chdir('/content/drive/MyDrive/path') - change"path" to your desired path
+     os.chdir('/content/drive/MyDrive/path') #change"path" to your desired path
 
 If you are using other notebook such as Jupyter Notebook just change its director using OS.
 
