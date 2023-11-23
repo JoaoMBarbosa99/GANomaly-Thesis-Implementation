@@ -42,8 +42,8 @@ The directory structure of your new project looks like this (please adjust the s
 ├── output         <- Laboratory classes (add only the necessary files)
      ├── test_results.csv        <- test results in csv file for (result of metrics.py)
      ├── test_results.xlsx       <- test results in xlsx file for (result of metrics.py)
-     ├── train_results.csv       <- train results in csv file for (result of metrics.py)
-     └── train_results.xlsx      <- train results in xlsx file for (result of metrics.py)
+     ├── train_results.csv       <- train results in csv file for (result of metrics.py) can't be uploaded due to its size.
+     └── train_results.xlsx      <- train results in xlsx file for (result of metrics.py) can't be uploaded due to its size.
 │
 ├── Sampling.py         <- Script for sampling data
 |
