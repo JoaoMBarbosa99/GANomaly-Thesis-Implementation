@@ -22,10 +22,10 @@ The directory structure of your new project looks like this (please adjust the s
 │   ├── visualizer.py         
 │   ├── data.py              
 │   ├── __init__.py          
-│   ├── networks.py          <- added Early Stopping
+│   ├── networks.py          
 │   ├── evaluate.py          
 │   ├── loss.py              
-│   └── model.py              
+│   └── model.py       <- added Early Stopping       
 │
 ├── options.py         <- Original Ganomaly Script with hyperparameter tunning
 ├── train.py           
