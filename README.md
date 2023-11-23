@@ -19,12 +19,12 @@ The directory structure of your new project looks like this (please adjust the s
 │       └── 1.abnormal
 │
 ├── lib                <- Ganomaly files
-│   ├── visualizer.py        <- Generated analysis as HTML, PDF, LaTeX, DOCX etc.
-│   ├── data.py              <- Generated graphics and figures to be used in reporting
-│   ├── __init__.py
-│   ├── networks.py
-│   ├── evaluate.py
-│   ├── loss.py
+│   ├── visualizer.py        <- 
+│   ├── data.py              <- 
+│   ├── __init__.py          <-
+│   ├── networks.py          <-
+│   ├── evaluate.py          <-
+│   ├── loss.py              <-
 │   └── model.py             <- Project/Thesis source files
 │
 ├── options.py         <-
@@ -39,23 +39,11 @@ The directory structure of your new project looks like this (please adjust the s
 |                         `pip freeze > requirements.txt`  to generate a list with the version of the 
 |                         different packages you use
 │
-├── code               <- Source code for use in this project.
-|    ├── data          <- Scripts to download, generate and process data
-|    │   └── make_dataset.py/m
-|    │   └── process_dataset.py/m
-|    │   └──
-|    │
-|    ├── algorithms    <- Functions to create models, run models, optization algorithms, etc.
-|    │
-|    ├── results       <- Scripts to apply the algorithms and obtain the results of your project
-|    │
-|    └── visualization <- Scripts and functions for visualizations
-|
 └── output         <- Laboratory classes (add only the necessary files)
-     ├── test_results.csv        <- Github
-     ├── test_results.xlsx   <- Cloud Computing: Google Collab
-     ├── train_results.csv         <- Databases and SQL Query
-     └── train_results.xlsx    <- Hardware implementation: Arduino
+     ├── test_results.csv        <- test results in csv file for (result of metrics.py)
+     ├── test_results.xlsx       <- test results in xlsx file for (result of metrics.py)
+     ├── train_results.csv       <- train results in csv file for (result of metrics.py)
+     └── train_results.xlsx      <- train results in xlsx file for (result of metrics.py)
 ```
 
 
