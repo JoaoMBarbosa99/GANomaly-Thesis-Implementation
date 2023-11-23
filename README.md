@@ -85,8 +85,8 @@ To train the GANomaly model just use the following text where some of the hyerpa
         
 # 4. Metrics.py
 
-After the previous text (# 3) is ran, 4 folders are created in the output folder.
-For a complete analysis of run:
+After the previous command (# 3) is ran, 4 new folders are created in the output folder.
+Only then, for a more complete analysis of the different metrics, the metrics.py script can be run:
 
 !python metrics.py
 
