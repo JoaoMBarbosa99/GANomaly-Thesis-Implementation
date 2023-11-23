@@ -39,11 +39,17 @@ The directory structure of your new project looks like this (please adjust the s
 |                         `pip freeze > requirements.txt`  to generate a list with the version of the 
 |                         different packages you use
 │
-└── output         <- Laboratory classes (add only the necessary files)
+├── output         <- Laboratory classes (add only the necessary files)
      ├── test_results.csv        <- test results in csv file for (result of metrics.py)
      ├── test_results.xlsx       <- test results in xlsx file for (result of metrics.py)
      ├── train_results.csv       <- train results in csv file for (result of metrics.py)
      └── train_results.xlsx      <- train results in xlsx file for (result of metrics.py)
+│
+├── Sampling.py         <- Script for sampling data
+|
+└── RLHF
+     ├── CustomEnv.py
+     └── HumanOperator.py 
 ```
 
 
