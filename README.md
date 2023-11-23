@@ -1,34 +1,38 @@
-# Advanced Automation Project Structure
+# Ganomaly Thesis Implementation
 
 *A logical, reasonably standardized, but flexible project structure for doing and sharing work. (based on [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/))*
 
-This repository contains the base structure for Advanced Automation project. In a near future, your thesis can also use this structure to make your work available for contributions from other authors. 
-
-Please follow the folder structure presented as close as you can. As all projects have different requirements, you will probably have to change the structure a bit to fit your needs.
+This repository contains the base structure for the implementation used in my thesis containing the adjacent scripts developed.
 
 ### Folder structure
 
 The directory structure of your new project looks like this (please adjust the structure and its description to best fit your project): 
 
 ```
-├── README.md          <- The top-level README for contributers of this project.
+├── README.md          <- README file.
 │
 ├── data
-│   ├── raw            <- The original, immutable data dump.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   └── processed      <- The final, canonical data sets for modeling.
+│   ├── train          <- Train data (only normal images).
+│       └── 0.normal
+│   ├── test           <- Test data used for validation.
+│       └── 0.normal
+│       └── 1.abnormal
 │
-├── docs               <- Documents
-│   ├── reports        <- Generated analysis as HTML, PDF, LaTeX, DOCX etc.
-│   ├── figures        <- Generated graphics and figures to be used in reporting
-│   └── project/thesis <- Project/Thesis source files
-│       └── templates  <- Templates (if available)
+├── lib                <- Ganomaly files
+│   ├── visualizer.py        <- Generated analysis as HTML, PDF, LaTeX, DOCX etc.
+│   ├── data.py              <- Generated graphics and figures to be used in reporting
+│   ├── __init__.py
+│   ├── networks.py
+│   ├── evaluate.py
+│   ├── loss.py
+│   └── model.py             <- Project/Thesis source files
 │
+├── options.py         <-
+├── train.py           <-
+├── metrics.py         <-
+│ 
 ├── references         <- Articles, books and other references used in your project. It is good practice to  
 |                         reference these materials in the comments of your code.
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering), the creator's  
-|                         initials, and a short `-` delimited description, e.g. `1.0-aa-initial-data-exploration`.
 │
 ├── requirements.txt   <- The file with instructions for reproducing the project environment (software).  
 |                         Indicates the version of  software you are using. If using Python, you can do 
@@ -39,6 +43,7 @@ The directory structure of your new project looks like this (please adjust the s
 |    ├── data          <- Scripts to download, generate and process data
 |    │   └── make_dataset.py/m
 |    │   └── process_dataset.py/m
+|    │   └──
 |    │
 |    ├── algorithms    <- Functions to create models, run models, optization algorithms, etc.
 |    │
@@ -46,11 +51,11 @@ The directory structure of your new project looks like this (please adjust the s
 |    │
 |    └── visualization <- Scripts and functions for visualizations
 |
-└── laboratory         <- Laboratory classes (add only the necessary files)
-     ├── L1_Git        <- Github
-     ├── L2_GCollab    <- Cloud Computing: Google Collab
-     ├── L3_DB         <- Databases and SQL Query
-     └── L4_Arduino    <- Hardware implementation: Arduino
+└── output         <- Laboratory classes (add only the necessary files)
+     ├── test_results.csv        <- Github
+     ├── test_results.xlsx   <- Cloud Computing: Google Collab
+     ├── train_results.csv         <- Databases and SQL Query
+     └── train_results.xlsx    <- Hardware implementation: Arduino
 ```
 
 
